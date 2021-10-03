@@ -1,31 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style type="text/css">
+        .body{
+            background-color: RGB(221, 222, 213);
+        }
+        .header-footer {
+            background-color: RGB(97, 131, 184);
+            height: 40px;
+            border: black solid;
+        }
+        .menu-item {
+            display: inline-block;
+            margin-right: 200px;
+            text-decoration: none;
+            color:white;
+            padding-top: 5px
+        }
+        .fot-text{
+            color:white;
+        }
+        .menu-item:hover{
+            color:black;
+        }
+        .description{
+            text-align: justify;
+        }
+        .goods {
+            outline: 3px solid RGB(0, 0, 0);
+        }
+    </style>
     <meta charset="UTF-8">
     <title>Каталог товаров</title>
 </head>
-<body>
-    <h2>
-        <pre><a href="main_page.html">Главная страница</a>                              <a href="katalog.html">Каталог</a>                              <a href="specification.html">Характеристика товаров</a>                         <a href="About us.html">О нас</a></pre>
+<body class = 'body'>
+    <h2 class = "header-footer">
+        <a href="main_page.html" class = "menu-item">Главная страница</a>
+        <a href="katalog.html" class = "menu-item">Каталог</a>
+        <a href="specification.html" class = "menu-item">Характеристика товаров</a>
+        <a href="About us.html" class = "menu-item">О нас</a>
     </h2>
 
     <h1 align = "center"> Каталог товаров</h1>
     <h2 align = "center">Хиты продаж</h2>
 
-    <p><big>Смартфон realme 8 PRO 6+128GB Punk Black (RMX3081)</big></p>
-    <p> <img src = "https://img.mvideo.ru/Pdb/30056560b.jpg" align="left" width="350" height="350"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <p><big>Наушники True Wireless Honor Earbuds 2 Lite ледяной белый</big></p>
-    <p> <img src = "https://img.mvideo.ru/Pdb/50160767b.jpg" align="left" width="350" height="350"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <p><big>Ноутбук Honor MagicBook X 15 i5/8/512 Gray (BBR-WAH9)</big></p>
-    <p> <img src = "https://img.mvideo.ru/Pdb/30056687b.jpg" align="left" width="350" height="350"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p><big>Смартфон realme 8 PRO 6+128GB Punk Black (RMX3081) - <strong>39999руб.</strong></big></p>
+    <p> <img class = 'goods' src = "https://img.mvideo.ru/Pdb/30056560b.jpg" align="left" width="350" height="350"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p><big>Наушники True Wireless Honor Earbuds 2 Lite ледяной белый - <strong>4990руб.</strong></big></p>
+    <p> <img class = 'goods' src = "https://img.mvideo.ru/Pdb/50160767b.jpg" align="left" width="350" height="350"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p><big>Ноутбук Honor MagicBook X 15 i5/8/512 Gray (BBR-WAH9) - <strong>32500руб.</strong></big></p>
+    <p> <img  class = 'goods' src = "https://img.mvideo.ru/Pdb/30056687b.jpg" align="left" width="350" height="350"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <hr/>
 
-    <p>Связь с нами: </p>
-    <ul>
-        <li>Служба поддержки 8 (800) 777-777-7</li>
-        <li>Пишите о проблемах по почте: MyShop@mail.ru</li>
-    </ul>
+    <p class = 'header-footer'><a class = 'fot-text'>Связь с нами: Служба поддержки 8 (800) 777-777-7. Пишите о проблемах по почте: MyShop@mail.ru</a></p>
 
 
 

@@ -1,26 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style type="text/css">
+        .body{
+            background-color: RGB(221, 222, 213);
+        }
+        .header-footer {
+            background-color: RGB(97, 131, 184);
+            height: 40px;
+            border: black solid;
+        }
+        .menu-item {
+            display: inline-block;
+            margin-right: 200px;
+            text-decoration: none;
+            color:white;
+            padding-top: 5px
+        }
+        .fot-text{
+            color:white;
+        }
+        .menu-item:hover{
+            color:black;
+        }
+        .description{
+            text-align: justify;
+        }
+    </style>
     <meta charset="UTF-8">
     <title>MyShop</title>
 </head>
-<body>
-    <h2>
-        <pre><a href="main_page.html">Главная страница</a>                              <a href="katalog.html">Каталог</a>                              <a href="specification.html">Характеристика товаров</a>                         <a href="About us.html">О нас</a></pre>
+<body class = 'body'>
+    <h2 class = "header-footer">
+        <a href="main_page.html" class = "menu-item">Главная страница</a>
+        <a href="katalog.html" class = "menu-item">Каталог</a>
+        <a href="specification.html" class = "menu-item">Характеристика товаров</a>
+        <a href="About us.html" class = "menu-item">О нас</a>
     </h2>
+
     <h1 align="center">Интернет-магазин цифровой и бытовой техники</h1>
 
-    <p>Рады приветствовать вас на нашем сайте. Здесь вы можете найти всю необходимую информации о характеристиках товаров, а также отзывы о них.
+    <p class = 'description'>Рады приветствовать вас на нашем сайте. Здесь вы можете найти всю необходимую информации о характеристиках товаров, а также отзывы о них.
     </p>
 
     <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
 
     <hr/>
 
-    <p>Связь с нами: </p>
-    <ul>
-        <li>Служба поддержки 8 (800) 777-777-7</li>
-        <li>Пишите о проблемах по почте: MyShop@mail.ru</li>
-    </ul>
+    <p class = 'header-footer' ><a class = 'fot-text'>Связь с нами: Служба поддержки 8 (800) 777-777-7. Пишите о проблемах по почте: MyShop@mail.ru</a></p>
 </body>
 </html>
