@@ -1,32 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style type="text/css">
+       @media screen and (min-width: 1700px){
+            .container{
+                width:1000px;
+            }
+        }
+        .body{
+            background-color: RGB(221, 222, 213);
+        }
+        .header {
+            background-color: RGB(97, 131, 184);
+            height: 100px;
+            border: black solid;
+            border-width: 4px;
+        }
+        .footer {
+            background-color: RGB(97, 131, 184);
+            height: 40px;
+            border: black solid;
+            border-width: 4px;
+        }
+        .menu-item {
+            display: inline;
+            margin-right: 150px;
+            text-decoration: none;
+            color:white;
+            padding-top: 5px;
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .3s;
+        }
+        .fot-text{
+            color:white;
+        }
+        .menu-item:hover{
+            color:black;
+            background-size: 100% 2px;
+        }
+        .description{
+            text-align: justify;
+        }
+        .logo {
+            vertical-align: middle;
+            margin-right: 50px;
+        }
+        .blocks{
+            display: inline;
+
+        }
+        .item-1{
+            width: 30%;
+            display: inline-block;
+            outline: 3px solid RGB(0, 0, 0);
+            margin-right: 35px;
+            font-size: 14px;
+            text-align: center;
+        }
+        .item-1:hover{
+            outline: 3px solid red;
+        }
+        .item-2{
+            width: 30%;
+            display: inline-block;
+            outline: 3px solid RGB(0, 0, 0);
+            margin-right: 35px;
+            font-size: 14px;
+            text-align: center;
+        }
+        .item-2:hover{
+            outline: 3px solid red;
+        }
+        .item-3{
+            width: 30%;
+            display: inline-block;
+            outline: 3px solid RGB(0, 0, 0);
+            margin-right: 35px;
+            font-size: 14px;
+            text-align: center;
+        }
+        .item-3:hover{
+            outline: 3px solid red;
+        }
+    </style>
     <meta charset="UTF-8">
     <title>Каталог товаров</title>
 </head>
-<body>
-    <h2>
-        <pre><a href="main_page.html">Главная страница</a>                              <a href="katalog.html">Каталог</a>                              <a href="specification.html">Характеристика товаров</a>                         <a href="About us.html">О нас</a></pre>
-    </h2>
+<body class = 'body'>
+    <div class = 'container'>
+        <h3 class = "header">
+            <a ><img class = 'logo' src = "https://sun9-53.userapi.com/impg/PXLNfml49z2p2-pb1HNOksiyFvVxjm2uiY58jA/YFMyzy1m0Oc.jpg?size=345x235&quality=96&sign=45cb2cc1fa699227ab9d2d7fc675da1b&type=album" width="250" height="100"</img></a>
+            <a href="main_page.html" class = "menu-item">Главная страница</a>
+            <a href="katalog.html" class = "menu-item">Каталог</a>
+            <a href="specification.html" class = "menu-item">Характеристика товаров</a>
+            <a href="About us.html" class = "menu-item">О нас</a>
+        </h3>
+        <hr/>
 
-    <h1 align = "center"> Каталог товаров</h1>
-    <h2 align = "center">Хиты продаж</h2>
+        <h1 align = "center"> Каталог товаров</h1>
+        <h2 align = "center">Хиты продаж</h2>
 
-    <p><big>Смартфон realme 8 PRO 6+128GB Punk Black (RMX3081)</big></p>
-    <p> <img src = "https://img.mvideo.ru/Pdb/30056560b.jpg" align="left" width="350" height="350"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <p><big>Наушники True Wireless Honor Earbuds 2 Lite ледяной белый</big></p>
-    <p> <img src = "https://img.mvideo.ru/Pdb/50160767b.jpg" align="left" width="350" height="350"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <p><big>Ноутбук Honor MagicBook X 15 i5/8/512 Gray (BBR-WAH9)</big></p>
-    <p> <img src = "https://img.mvideo.ru/Pdb/30056687b.jpg" align="left" width="350" height="350"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br>
 
-    <hr/>
+        <div class = 'blocks'>
+            <div class = 'item-1'>
+                <a>Смартфон realme 8 PRO 6+128GB Punk Black (RMX3081) - <strong>39999руб.</strong></a>
+                <a> <img class = 'goods' src = "https://img.mvideo.ru/Pdb/30056560b.jpg" align="left" width=100% height=100%></a> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+            <div class = 'item-2'>
+                <a>Наушники True Wireless Honor Earbuds 2 Lite ледяной белый - <strong>4990руб.</strong></a>
+                <a> <img class = 'goods' src = "https://img.mvideo.ru/Pdb/50160767b.jpg" align="left" width=100% height=100%></a> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+            <div class = 'item-3'>
+                <a>Ноутбук Honor MagicBook X 15 i5/8/512 Gray (BBR-WAH9) - <strong>32500руб.</strong></a>
+                <a> <img  class = 'goods' src = "https://img.mvideo.ru/Pdb/30056687b.jpg" align="left" width=100% height=100%></a> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+        <br><br><br><br>
+        <hr/>
 
-    <p>Связь с нами: </p>
-    <ul>
-        <li>Служба поддержки 8 (800) 777-777-7</li>
-        <li>Пишите о проблемах по почте: MyShop@mail.ru</li>
-    </ul>
-
+        <p class = 'footer'><a class = 'fot-text'>© Связь с нами: Служба поддержки 8 (800) 777-777-7. Пишите о проблемах по почте: MARKET@mail.ru</a></p>
+    </div>
 
 
 
