@@ -2,51 +2,79 @@
 <html lang="en">
 <head>
     <style type="text/css">
-        .body{
+        @media screen and (min-width: 1700px){
+            .container{
+                width:1000px!important;
+            }
+        }
+
+        body {
             background-color: RGB(221, 222, 213);
         }
-        .header-footer {
+        .header {
+            background-color: RGB(97, 131, 184);
+            height: 100px;
+            width:100%;
+            border: black solid;
+            border-width: 4px;
+        }
+        .footer {
             background-color: RGB(97, 131, 184);
             height: 40px;
             border: black solid;
+            border-width: 4px;
         }
         .menu-item {
-            display: inline-block;
-            margin-right: 200px;
+            display: inline;
             text-decoration: none;
             color:white;
-            padding-top: 5px
+            margin-right: 150px;
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .3s;
         }
         .fot-text{
             color:white;
         }
         .menu-item:hover{
             color:black;
+            text-align = right;
+            background-size: 100% 2px;
         }
         .description{
             text-align: justify;
+        }
+        .logo {
+            vertical-align: middle;
+            margin-right: 50px;
         }
     </style>
     <meta charset="UTF-8">
     <title>MyShop</title>
 </head>
-<body class = 'body'>
-    <h2 class = "header-footer">
-        <a href="main_page.html" class = "menu-item">Главная страница</a>
-        <a href="katalog.html" class = "menu-item">Каталог</a>
-        <a href="specification.html" class = "menu-item">Характеристика товаров</a>
-        <a href="About us.html" class = "menu-item">О нас</a>
-    </h2>
+<body>
+    <div class = 'container'>
+            <h3 class = "header">
+                <a ><img class = 'logo' src = "https://sun9-53.userapi.com/impg/PXLNfml49z2p2-pb1HNOksiyFvVxjm2uiY58jA/YFMyzy1m0Oc.jpg?size=345x235&quality=96&sign=45cb2cc1fa699227ab9d2d7fc675da1b&type=album" width="250" height="100"</img></a>
+                <a class = "menu-item" href="main_page.html" >Главная страница</a>
+                <a class = "menu-item" href="katalog.html">Каталог</a>
+                <a class = "menu-item" href="specification.html">Характеристика товаров</a>
+                <a class = "menu-item" href="About us.html">О нас</a>
+            </h3>
+        <hr/>
 
-    <h1 align="center">Интернет-магазин цифровой и бытовой техники</h1>
+        <h1 align="center">Интернет-магазин цифровой и бытовой техники MARKET</h1>
 
-    <p class = 'description'>Рады приветствовать вас на нашем сайте. Здесь вы можете найти всю необходимую информации о характеристиках товаров, а также отзывы о них.
-    </p>
+        <p class = 'description'>Рады приветствовать вас на нашем сайте. Здесь вы можете найти всю необходимую информации о характеристиках товаров, а также отзывы о них.
+        </p>
 
-    <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+        <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
 
-    <hr/>
+        <hr/>
 
-    <p class = 'header-footer' ><a class = 'fot-text'>Связь с нами: Служба поддержки 8 (800) 777-777-7. Пишите о проблемах по почте: MyShop@mail.ru</a></p>
+        <p class = 'footer' ><a class = 'fot-text'>© Связь с нами: Служба поддержки 8 (800) 777-777-7. Пишите о проблемах по почте: MARKET@mail.ru</a></p>
+    </div>
 </body>
 </html>

@@ -2,81 +2,140 @@
 <html lang="en">
 <head>
     <style type="text/css">
+        @media screen and (min-width: 1700px){
+            .container{
+                width:1000px;
+            }
+        }
         .body{
             background-color: RGB(221, 222, 213);
         }
-        .header-footer {
+        .header{
+            background-color: RGB(97, 131, 184);
+            height: 100px;
+            border: black solid;
+            border-width: 4px;
+        }
+        .footer {
             background-color: RGB(97, 131, 184);
             height: 40px;
             border: black solid;
+            border-width: 4px;
         }
         .menu-item {
-            display: inline-block;
-            margin-right: 200px;
+            display: inline;
+            margin-right: 150px;
             text-decoration: none;
             color:white;
-            padding-top: 5px
+            padding-top: 5px;
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .3s;
         }
         .fot-text{
             color:white;
         }
         .menu-item:hover{
             color:black;
+            background-size: 100% 2px;
         }
         .description{
             text-align: justify;
+        }
+        .logo {
+            vertical-align: middle;
+            margin-right: 50px;
+        }
+
+        .item-1{
+            display: inline;
+            font-size: 18px;
+        }
+
+        .item-2{
+            display: inline;
+            font-size: 18px;
+        }
+
+        .item-3{
+            display: inline;
+            font-size: 18px;
+        }
+        .goods{
+            outline: 3px solid RGB(0, 0, 0);
+            margin-right: 50px;
+        }
+        .buy{
+            background-color: RGB(97, 131, 184);
         }
     </style>
     <meta charset="UTF-8">
     <title>Характеристика</title>
 </head>
 <body class = 'body'>
-    <h2 class = "header-footer">
-        <a href="main_page.html" class = "menu-item">Главная страница</a>
-        <a href="katalog.html" class = "menu-item">Каталог</a>
-        <a href="specification.html" class = "menu-item">Характеристика товаров</a>
-        <a href="About us.html" class = "menu-item">О нас</a>
-    </h2>
+    <div class = 'container'>
+        <h3 class = "header">
+            <a ><img class = 'logo' src = "https://sun9-53.userapi.com/impg/PXLNfml49z2p2-pb1HNOksiyFvVxjm2uiY58jA/YFMyzy1m0Oc.jpg?size=345x235&quality=96&sign=45cb2cc1fa699227ab9d2d7fc675da1b&type=album" width="250" height="100"</img></a>
+            <a href="main_page.html" class = "menu-item">Главная страница</a>
+            <a href="katalog.html" class = "menu-item">Каталог</a>
+            <a href="specification.html" class = "menu-item">Характеристика товаров</a>
+            <a href="About us.html" class = "menu-item">О нас</a>
+        </h3>
+        <hr/>
 
-    <h1 align = "center">Характеристика товаров</h1>
-    <br><br><br><br>
+        <h1 align = "center">Характеристика товаров</h1>
+        <br><br><br><br>
+
+        <div class = 'item-1'>
+            <a> <img class = 'goods' src = "https://img.mvideo.ru/Pdb/30056560b.jpg" align="left" width=350px height=350px></a>
+            <a>Смартфон realme 8 PRO 6+128GB Punk Black (RMX3081)</a><br>
+            <ul>
+                <li>Экран - 6.4"/2400x1080 Пикс</li>
+                <li>Оперативная память (RAM) - 6 ГБ</li>
+                <li>Встроенная память (ROM) - 128 ГБ</li>
+                <li>Основная камера МПикс - 108/8/2/2</li>
+                <li>Фронтальная камера МПикс - 16</li>
+            </ul>
+            <button class = 'buy'>Добавить в корзину  <img width = 25px hight = 15px src = "https://w7.pngwing.com/pngs/1022/32/png-transparent-shopping-cart-icon-shopping-cart-logo-icon-shopping-cart-label-coffee-shop-shopping-mall-thumbnail.png"</button>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <div class = 'item-2'>
+            <a> <img class = 'goods' src = "https://img.mvideo.ru/Pdb/50160767b.jpg" align="left" width=350px height=350px></a>
+            <a>Наушники True Wireless Honor Earbuds 2 Lite ледяной белый</a><br>
+            <ul>
+                <li>Тип подключения беспроводной - Bluetooth </li>
+                <li>Частотный диапазон - 20 Гц - 20 кГц </li>
+                <li>Система активного подавления шума - Да</li>
+                <li>Система шумоподавления - активная</li>
+                <li>Материал амбушюров - силикон</li>
+            </ul>
+            <button class = 'buy'>Добавить в корзину  <img width = 25px hight = 15px src = "https://w7.pngwing.com/pngs/1022/32/png-transparent-shopping-cart-icon-shopping-cart-logo-icon-shopping-cart-label-coffee-shop-shopping-mall-thumbnail.png"</button>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <div class = 'item-3'>
+            <a> <img  class = 'goods' src = "https://img.mvideo.ru/Pdb/30056687b.jpg" align="left" width=350px height=350px></a>
+            <a>Ноутбук Honor MagicBook X 15 i5/8/512 Gray (BBR-WAH9)</a><br>
+            <ul>
+                <li>Диагональ/разрешение - 15.6"/1920x1080 пикс </li>
+                <li>Процессор - Intel Core i5 10210U 1.6 ГГц </li>
+                <li>Оперативная память (RAM) - 8 ГБ</li>
+                <li>Графический контроллер - Intel UHD Graphics</li>
+                <li>Объем SSD - 512 ГБ</li>
+            </ul>
+            <button class = 'buy'>Добавить в корзину  <img width = 25px hight = 15px src = "https://w7.pngwing.com/pngs/1022/32/png-transparent-shopping-cart-icon-shopping-cart-logo-icon-shopping-cart-label-coffee-shop-shopping-mall-thumbnail.png"</button>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
-    <a><big>Смартфон realme 8 PRO 6+128GB Punk Black (RMX3081)</big></a><br>
-    <ul>
-        <li>Экран - 6.4"/2400x1080 Пикс</li>
-        <li>Оперативная память (RAM) - 6 ГБ</li>
-        <li>Встроенная память (ROM) - 128 ГБ</li>
-        <li>Основная камера МПикс - 108/8/2/2</li>
-        <li>Фронтальная камера МПикс - 16</li>
-    </ul>
-    <br><br>
 
-    <a><big>Наушники True Wireless Honor Earbuds 2 Lite ледяной белый</big></a><br>
-    <ul>
-        <li>Тип подключения беспроводной - Bluetooth </li>
-        <li>Частотный диапазон - 20 Гц - 20 кГц </li>
-        <li>Система активного подавления шума - Да</li>
-        <li>Система шумоподавления - активная</li>
-        <li>Материал амбушюров - силикон</li>
-    </ul>
-    <br><br>
+        <hr/>
 
-    <a><big>Ноутбук Honor MagicBook X 15 i5/8/512 Gray (BBR-WAH9)</big></a><br>
-    <ul>
-        <li>Диагональ/разрешение - 15.6"/1920x1080 пикс </li>
-        <li>Процессор - Intel Core i5 10210U 1.6 ГГц </li>
-        <li>Оперативная память (RAM) - 8 ГБ</li>
-        <li>Графический контроллер - Intel UHD Graphics</li>
-        <li>Объем SSD - 512 ГБ</li>
-    </ul>
-    <br><br><br><br>
-
-
-
-    <hr/>
-
-    <p class = 'header-footer'><a class = 'fot-text'>Связь с нами: Служба поддержки 8 (800) 777-777-7. Пишите о проблемах по почте: MyShop@mail.ru</a></p>
-
+        <p class = 'footer'><a class = 'fot-text'>© Связь с нами: Служба поддержки 8 (800) 777-777-7. Пишите о проблемах по почте: MARKET@mail.ru</a></p>
+    </div>
 </body>
 </html>
